@@ -28,12 +28,18 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
-/* 7. Avoid text overflows */
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+  font-size: 100%;
+}
+
+/* 8. Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* 8. Improve line wrapping */
+/* 9. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
@@ -41,7 +47,14 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-/* 9. Create a root stacking context */
+/* 10. Create a root stacking context */
 #root, #__next {
   isolation: isolate;
+}
+
+/* 11. Set font size to 10px */
+/* Now you can set font size of other elements in rem,
+   for example, 1.5rem = 15px */
+html {
+  font-size: 62.5%;
 }

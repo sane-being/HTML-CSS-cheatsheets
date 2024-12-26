@@ -1,0 +1,9 @@
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+    font-size: 100%;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
